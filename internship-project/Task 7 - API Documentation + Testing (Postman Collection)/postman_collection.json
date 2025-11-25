@@ -1,0 +1,52 @@
+{
+  "info": {
+    "name": "Internship Task API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\":\"alice\",\"email\":\"a@b.com\",\"password\":\"secret\"}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/register/",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "register",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\":\"alice\",\"password\":\"secret\"}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/login/",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "login",
+            ""
+          ]
+        }
+      }
+    }
+  ]
+}
